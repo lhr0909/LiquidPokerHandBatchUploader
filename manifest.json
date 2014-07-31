@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Liquid Poker Hand History Batch Uploader",
+  "description": "This extension will break up your hand history and upload them one by one for you",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.liquidpoker.net/*"],
+      "css": [],
+      "js": ["uploader.js"]
+    }
+  ],
+  "permissions": []
+}
